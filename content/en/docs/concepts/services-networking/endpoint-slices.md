@@ -180,7 +180,7 @@ The control plane mirrors Endpoints resources unless:
 * the Endpoints resource has a `control-plane.alpha.kubernetes.io/leader`
   annotation.
 * the corresponding Service resource does not exist.
-* the corresponding Service resource has a non-nil selector.
+* the corresponding Service resource has a nil selector.
 
 Individual Endpoints resources may translate into multiple EndpointSlices. This
 will occur if an Endpoints resource has multiple subsets or includes endpoints
